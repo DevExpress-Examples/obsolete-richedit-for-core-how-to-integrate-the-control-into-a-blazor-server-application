@@ -72,7 +72,7 @@ Register the created script in the <head> tag of ```Pages/_Host.cshtml```
 <!-- default file list -->
 *Files to look at*:
 
-* [_Host.razor](./CS/Pages/_Host.razor)
+* [_Host.cshtml](./CS/Pages/_Host.cshtml)
 * [Index.razor](./CS/Pages/Index.razor)
 * [richedit-creator.js](./CS/wwwroot/js/richedit-creator.js)
 * [RichEditController.cs](./CS/Controllers/RichEditController.cs)
