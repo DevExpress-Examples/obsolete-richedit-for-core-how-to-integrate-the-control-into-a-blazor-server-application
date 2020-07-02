@@ -1,19 +1,19 @@
-# Rich Edit for ASP.NET Core How to integrate a control into a Blazor server application
+# RichEdit for ASP.NET Core - How to integrate the control into a Blazor server application
 
 ## Requirements
-- To use the RichEdit control in an Blazor application, you need to have a [Universal, DXperience, or ASP.NET subscription](https://www.devexpress.com/buy/net/).
-- Versions of the devexpress npm packages should be identical (their major and minor versions should be the same).
+- To use the RichEdit control in a Blazor application, you need to have a [Universal, DXperience, or ASP.NET subscription](https://www.devexpress.com/buy/net/).
+- Versions of devexpress npm packages should be identical (their major and minor versions should be the same).
  
-This example illustrates a possible way of integrating a client part of ASP.NET Core Rich Edit into an ASP.NET Web Forms application. This can be done as follows:
+This example illustrates a possible way to integrate the client part of ASP.NET Core RichEdit into a Blazor server application. This can be done as follows:
 
-1. Create a new Blazor application using recommendations from the following topic: [Get started with ASP.NET Core Blazor](https://docs.microsoft.com/en-us/aspnet/core/blazor/get-started?view=aspnetcore-3.1&tabs=visual-studio)
-2. Install necessary NPM packages
+1. Create a new Blazor application using recommendations from the following topic: [Get started with ASP.NET Core Blazor](https://docs.microsoft.com/en-us/aspnet/core/blazor/get-started?view=aspnetcore-3.1&tabs=visual-studio).
+2. Install necessary NPM packages.
  
-The **devexpress-richedit** npm package references **devextreme** as [peerDependencies](https://docs.npmjs.com/files/package.json#peerdependencies). The peerDependencies packages should be installed manually. This allows developers to control a version of the peerDependencies packages and guarantees that the package is installed once.
+The **devexpress-richedit** npm package references **devextreme** as [peerDependencies](https://docs.npmjs.com/files/package.json#peerdependencies). These peerDependencies packages should be installed manually. This allows developers to control the version of peerDependencies packages and guarantees that the package is installed once.
  
-Install a RichEdit package with required peerDependencies:
+Install the RichEdit package with required peerDependencies:
  
-* Create npm Configuration File if the ```package.json``` file unexist by the command ```npm init -y```
+* If the ```package.json``` file does not exist, create a new NPM configuration file by executing the following command: ```npm init -y```.
 * Add the following dependencies to this file:
 ```
 {
@@ -25,9 +25,10 @@ Install a RichEdit package with required peerDependencies:
 }
 ```
 * Call ```npm i```.
-You can find all the libraries in the **node_modules** folder after the installation is completed.
+
+You can find all libraries in the **node_modules** folder once installation is completed.
  
-3. Create a rich edit bundle using recommendations from this help topic: [Create a RichEdit Bundle](https://docs.devexpress.com/AspNetCore/401721/office-inspired-controls/get-started/richedit-bundle)
+3. Create a rich edit bundle using recommendations from this help topic: [Create a RichEdit Bundle](https://docs.devexpress.com/AspNetCore/401721/office-inspired-controls/get-started/richedit-bundle).
 
 ```bash
 cd node_modules/devexpress-richedit
@@ -38,7 +39,7 @@ cd ../..
  
 3. Copy rich edit scripts
 * Copy the bundled script from ```node_modules/devexpress-richedit/dist/custom/dx.richedit.min.js``` to ```wwwroot/js```
-* Copy the bundled css resources from ```node_modules/devexpress-richedit/dist/custom/dx.richedit.css``` and icons from ```node_modules/devexpress-richedit/dist/custom/icons``` to ```wwwroot/css```
+* Copy bundled css resources from ```node_modules/devexpress-richedit/dist/custom/dx.richedit.css``` and icons from ```node_modules/devexpress-richedit/dist/custom/icons``` to ```wwwroot/css```
  
 4. Register scripts in the <head> tag of ```Pages/_Host.cshtml```
  
@@ -47,7 +48,7 @@ cd ../..
 <script src="js/dx.richedit.min.js"></script>
 ```
  
-5. Create a JavaScript rich edit initializing function. For this, create the ```wwwroot/js/richedit-creator.js``` file and place the following content:
+5. Create a JavaScript rich edit initializing function. For this, create a ```wwwroot/js/richedit-creator.js``` file and place the following content in it:
  
 ```javascript
 function createRichEdit(documentAsBase64) {
