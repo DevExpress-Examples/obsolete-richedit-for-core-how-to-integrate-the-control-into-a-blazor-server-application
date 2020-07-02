@@ -64,7 +64,7 @@ function createRichEdit(documentAsBase64) {
 }
 ```
  
-Register the created script in the <head> tag of ```Pages/_Host.cshtml```
+Register the created script in the ```<head>``` tag of ```Pages/_Host.cshtml```
  
 ```
 <script src="js/richedit-creator.js"></script>
