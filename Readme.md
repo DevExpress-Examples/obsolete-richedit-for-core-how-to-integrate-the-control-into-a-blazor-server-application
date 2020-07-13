@@ -5,6 +5,10 @@
 - Versions of devexpress npm packages should be identical (their major and minor versions should be the same).
  
 This example illustrates a possible way to integrate the client part of ASP.NET Core RichEdit into a Blazor server application using steps from the following help topic: [Rich Text Editor > Get Started > Blazor Server Application](https://docs.devexpress.com/AspNetCore/401871/rich-edit/get-started/blazor-server-application).
+
+***See also:***  
+[RichEdit for ASP.NET Core - How to integrate the control into a Blazor client application](https://github.com/DevExpress-Examples/rich-edit-for-asp-net-core-how-to-integrate-the-control-into-a-blazor-client-application)
+
 <!-- default file list -->
 *Files to look at*:
 
